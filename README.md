@@ -8,7 +8,7 @@ An ambitious theme for zsh-syntax-highlighting
 
 Required: [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 
-Clone this repository and copy `embark-syntax-highlighting.zsh` to your preferred location on the file system, then source the file from `.zshrc`. Note that you must source it *after* loading the zsh-syntax-highlighting plugin. 
+Clone this repository and copy `embark-syntax-highlighting.zsh` to your preferred location on the file system, then source the file from `.zshrc`. Note that you must source it *before* loading the zsh-syntax-highlighting plugin. 
 
 Example setup:
 ```bash
@@ -19,10 +19,11 @@ cp -v embark-zsh-syntax-highlighting.zsh ~/.zsh/
 
 Example `.zshrc`:
 ```bash
-# load zsh-users/zsh-syntax-highlighting plugin here
 
-# now load embark theme
+# load embark theme
 source ~/.zsh/embark-zsh-syntax-highlighting.zsh
+
+# now load zsh-syntax-highlighting plugin
 ```
 
 ## License
